@@ -1,0 +1,14 @@
+*{
+    font-size:medium;
+    font-weight: 500;
+    padding:0px;
+    margin:0px;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    color: black;
+    background-color: white;
+}
+meta,title,style,script{
+    display:none;
+}
