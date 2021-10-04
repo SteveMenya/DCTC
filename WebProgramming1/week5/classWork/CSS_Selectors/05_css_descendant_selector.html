@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal selector</title>
+    <style>
+        /* 
+        CSS rules look like this:
+        selector {
+            property:value;
+            property2:value2;
+        }
+
+        The descendant selector
+
+        selectorParents selectorChildren
+
+Matches a selector that is a descendent of another selector 
+        (not just a direct child of the elements)
+
+        The selectors can be any selector
+            - universal, element, class, id
+        and can be a mix of any selector
+        
+        #id .class
+        h1 *
+        .class p
+
+        */
+        ul *{
+            background-color: gray;
+        }
+        h1 *{
+            background-color: green;
+        }
+        .innerLi *{
+            background-color: red;
+        }
+        .thirdLi *{
+            background-color: hotpink;
+        }
+     </style>
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    <p>A paragraph of text. this should be green background</p>
+    <ul>
+       <li><span>Item 1</span></li>
+       <li><a><span>Item 2</span></a></li>
+       <li><span>Item 3</span></li>
+    </ul>
+    <ul class="innerLi">
+        <li><span>Item 4</span></li>
+        <li><a><span>Item 5</span></a></li>
+        <li><span>Item 6</span></li>
+     </ul>
+     <ul class="thirdLi">
+        <li><span>Item 4</span></li>
+        <li><a><span>Item 5</span></a></li>
+        <li><span>Item 6</span></li>
+     </ul>
+    <p>Another paragraph of text</p>
+</body>
+</html>

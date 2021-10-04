@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        section{
+            background-color: red;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            margin-left: 15px;
+            margin-right: 15px;
+            border-width: 15px;
+            border-color: black;
+            padding: 20px;
+        }
+        div{
+            margin: 30px;
+            padding: 5px 40px;
+            border: dashed 10px chartreuse;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Here are all the properties that affect the box model</h1>
+    <p>
+        Content - The content of the box, where text and images appear
+        Padding - Clears an area around the content. The padding is transparent
+        Border - A border that goes around the padding and content
+        Margin - Clears an area outside the border. The margin is transparent
+    </p>
+    <p>How do these properties affect parent/child elements? Siblings?</p>
+    <section>
+        Parent Element
+        <div>
+            Child Element
+        </div>
+        <div>
+            Siblings?
+        </div>
+    </section>
+</body>
+</html>

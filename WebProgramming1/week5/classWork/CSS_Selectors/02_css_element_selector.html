@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal selector</title>
+    <style>
+        /* 
+        CSS rules look like this:
+        selector {
+            property:value;
+            property2:value2;
+        }
+
+        The element selector
+
+        p,a,ul,li,h1,h2,h3,span,div
+
+        Applies the rules to all elements on the page
+        that use the corresponding element tag
+        */
+        h1{background-color: purple;}
+        p{background-color: green;}
+        ul{background-color: orange;}
+        li{background-color: blue;}
+     </style>
+</head>
+<body>
+
+     <h1>Hello World</h1>
+     <p>A paragraph of text</p>
+     <ul>
+        <li class="myclass">Item 1</li>
+        <li id="myid">Item 2</li>
+        <li class="myclass">Item 3</li>
+     </ul>
+     <p>Another paragraph of text</p>
+</body>
+</html>

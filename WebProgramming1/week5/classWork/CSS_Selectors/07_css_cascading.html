@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal selector</title>
+    <style>
+    /* 
+        Cascading, the C in CSS
+
+        ● Cascading is two or more rules applying to 
+        the same element. Which rule will be applied is 
+        determined by the following:
+        
+            ○ Last Rule
+                two selectors identical the latter will 
+                take precedence 
+
+            ○ Specificity
+                if one selector is more specific than 
+                the others, the more specific rule will 
+                take precedence over more general ones
+
+            ○ Important
+                !important, don't use as it breaks cascading
+                Useful when dealing with legacy sites 
+                that you need to pile more technical debt onto
+    */
+    p{
+        background-color: red;
+    }
+    p{
+        background-color: seagreen;
+    }
+    #cascading {
+        background-color: pink;
+    }
+    ul{
+        background-color: blue;
+    }
+     </style>
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    <p>A paragraph of text</p>
+    <ul id="cascading">
+       <li><span>Item 1</span></li>
+       <li><a><span>Item 2</span></a></li>
+       <li><span>Item 3</span></li>
+    </ul>
+    <section>
+        <header>
+            <h1>Hello Sections</h1>
+        </header>
+        <p>This is a paragraph of <strong>text</strong></p>
+        <figure>
+            99% of statistics are made up on the spot 
+            <figcaption>
+                *Citation needed
+            </figcaption>    
+        </figure>
+    </section>
+    <p>Another paragraph of text</p>
+</body>
+</html>
