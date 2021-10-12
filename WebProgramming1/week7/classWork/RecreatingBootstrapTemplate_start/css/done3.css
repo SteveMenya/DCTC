@@ -1,0 +1,122 @@
+/*
+General Stylings
+*/
+html,body{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: sans-serif;
+}
+img{
+    width:100%;
+}
+a[class*="btn"]{
+    background-color:white;
+    color:grey;
+    border:solid 1px grey;
+    padding:10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+/*
+Navigation 
+*/
+nav ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+nav ul a{
+    text-decoration: none;
+    background-color:#4a4e5a;
+    color:white;
+    display:block;
+    text-align: center;
+    padding: 10px 20px;
+    border: solid 1px #bdbdbd;
+}
+@media screen and (min-width: 770px){
+    nav ul{
+        flex-direction: row;
+        background-color:#4a4e5a;
+        justify-content: center;
+        padding:10px 40px;
+    }
+    nav ul a{
+        margin: 0px 10px;
+        width: 80px;
+    }
+}
+/* 
+   Main Header
+*/
+#header-area{
+    color:white;
+    height: 300px;
+    text-align: center;
+    font-size:larger;
+    background-image: url("../img/bg-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#header-area h1{
+    text-shadow: 3px 3px black;
+}
+
+/*
+   Feature Content
+*/
+#feature-area{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#feature-area .feature-content{
+    margin:25px;
+    width:350px;
+    padding-bottom:40px;
+    text-align: center;
+    background-color:#f4f4f4;
+}
+#feature-area .feature-content .feature-content-title,
+#feature-area .feature-content .feature-content-description{
+    padding:20px;
+    margin:0;
+}
+.green-text{
+    color:green;
+}
+a.green-btn{
+    color:white;
+    background-color:green;
+    border-color:green;
+}
+.blue-text{
+    color:blue;
+}
+a.blue-btn{
+    color:white;
+    background-color:blue;
+    border-color:blue;
+}
+.red-text{
+    color:red;
+}
+a.red-btn{
+    color:white;
+    background-color:red;
+    border-color:red;
+}
+
+
+
+
+

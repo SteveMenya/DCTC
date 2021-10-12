@@ -1,0 +1,106 @@
+/* General Tweaks */
+* {
+    margin: 0;
+    padding: 0;
+  }
+body,html {
+    margin : 0;
+    padding: 0;
+}
+img {
+    width:100;
+}
+body{
+    font-family: sans-serif;
+}
+
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav a {
+    display: block;
+    text-align: center;
+    background-color: #484954;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    border-bottom: white solid 1px;
+}
+
+/* header */
+#header-area{
+    background-image: url(../img/bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: larger;
+}
+#header-area h1 {
+    text-shadow: 3px 3px 4px black;
+}
+#header-area h4 {
+    text-shadow: 1px 0px 0px black;
+}
+
+/* Feature Cards 
+id="feature-area"
+    class="feature-content"
+*/
+#feature-area {
+padding: 20px;
+}
+#feature-area .feature-content{
+    margin: 10px;
+    background-color: #e2e0dd;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#feature-area .feature-content :not(img){
+    padding: 15px 30px;
+}
+#feature-area .feature-content a[class*="btn"]{
+    background-color: #aab8d2;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 570px){
+    /* navigation pads */
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #48495a;
+        padding:20px 0px;
+    }
+    nav a{
+        border: #a7a7a7 solid 1px
+    }
+
+    /* cards */
+
+    #feature-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #feature-area .feature-content{
+        min-width:300px;
+        max-width: 400px;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    nav ul {
+        justify-content: center;
+    }
+}
