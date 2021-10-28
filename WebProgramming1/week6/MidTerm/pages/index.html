@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
     <link rel="stylesheet" href="../styleSheet/index.css">
+    <script type="text/javascript" src="./index.js">
+    carousel();
+    </script>
     <style>
       @media screen and (min-width: 300px) {
         h1 {
@@ -18,18 +21,52 @@
         }
       }
     </style>
+
+   
   </head>
   <body>
-    <div class="navBar">
-      <a class="active" href="index.html">Home</a>
-      <a href="/WebProgramming1/week6/MidTerm/pages/bio.html">Bio</a>
-      <a href="/WebProgramming1/week6/MidTerm/pages/photography.html">Photography</a>
-  </div>
-  
-    <h1>Main Page</h1>
-  
+    <div class="navbar">
+      <a class="active" href="./index.html">Home</a>
+      <a href="./merchandise.html">Merchandise</a>
+      <div class="dropdown" class="active">
+        <button class="dropbtn">Menu
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./featured.html">Featured Drinks</a>
+          <a href="./cold.html">Frozen Drinks</a>
+          <a href="./hot.html">Hot Drinks</a>
+        </div>
+      </div>
+      
+      <a href="./contact_us.html">Contact Us</a>
+      
+      <div class= "login-container">
+       <a href="./sign_in.html">Sign in</a>
+      </div>
+     
+    </div>
+     
+    <section>
+      <img class="myPhotos" src="../cafeImages/cafefront.jpg" alt="cafefront" style="width: 100%;">
+      <img class="myPhotos" src="../cafeImages/coffeecup.jpg" alt="coffeecup" style="width: 100%;">
+      <img class="myPhotos" src="../cafeImages/coffeshot.jpg" alt="coffeshot" style="width: 100%;">
+      <img class="myPhotos" src="../cafeImages/tomcoffe.jpg" alt="tomcoffe" style="width: 100%;">
+    </section>
 
+   
+<!-- 
+    <div class="creators-info">
+      <h3 class="creators- data">Made by Steve Otieno</h3>
+    </div>
 
+    <div class="header-info">
+      <h1 class="header-data">TEXAS MODERN</h1>
 
-  </body>
+    </div>
+
+    <div class="page-footer"> Designed by Steve</div>
+ -->
+
+      
 </html>
