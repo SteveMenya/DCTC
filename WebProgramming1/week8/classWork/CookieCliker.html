@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <style>
+        #cookie{
+            background-color: brown;
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+        }
+        .unavailable {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scrore: <span id = "scoreOutput">0</span></h1>
+    <button id = "cookie">Click me!</button>
+    <button id = "cookieRobot" class="unavailable">Purchase Robot $100</button>
+
+    <script>
+        const scoreElement = document.querySelector('#scoreOutput');
+        const cookieElement = document.querySelector('#cookie');
+        const robotElement = document.querySelector('#cookieRobot');
+        let score = 0;
+        cookieElement.addEventListener('click', function() {
+            scoreElement.textContent = ++score;
+            if(score > 5) {
+                robotElement.classList.remove('unavailable')
+            }else{
+                robotElement.classList.add('unavailable')
+            }
+        });
+        robotElement.addEventListener('click', function(){
+            if(score < 100) return;
+            score = score - 100;
+            scoreElement.textContent = score;
+            setInterval(function() {
+                cookieElement.click();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
