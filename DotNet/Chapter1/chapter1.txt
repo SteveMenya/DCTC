@@ -1,0 +1,43 @@
+Chapter 1 Assignment (25 points):
+1.7 
+a)Logical Units
+b)Embedded System
+c)Fields
+d)Secondary Storage
+e)Operating Systems
+f)Class
+g)Programming
+
+
+1.8
+a)Unified Modeling Language (UML)
+b)HyperText Markup Language(HTML)
+c)Virtual Machine
+d)porting
+e)Microsoft Azure
+f)Software reuse
+
+1.9
+a) False. A bit can either be 0 or 1.
+b) True
+c) True
+d) True
+e) True
+f)  False. I can use c# on my macbook
+g) True
+h) True
+i) True
+
+
+1.10
+Advatage - Interpreted program can begin executing as soon as it's downloaded to the client's machine without need for compiling.
+Disadvantate - Intepreted programs run slower and consume more memory than compiled code.
+
+1.14
+World Wide Web
+
+1.15 
+a) True
+b) False
+c) False
+d) True

@@ -1,0 +1,11 @@
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\bin\Debug\CalculatorGUI.exe.config
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\bin\Debug\CalculatorGUI.exe
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\bin\Debug\CalculatorGUI.pdb
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\obj\Debug\CalculatorGUI.csproj.AssemblyReference.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\obj\Debug\CalculatorGUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\obj\Debug\CalculatorGUI.Calculator.resources
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\obj\Debug\CalculatorGUI.Properties.Resources.resources
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\obj\Debug\CalculatorGUI.csproj.GenerateResource.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\obj\Debug\CalculatorGUI.csproj.CoreCompileInputs.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\obj\Debug\CalculatorGUI.exe
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\CalculatorGUI\CalculatorGUI\obj\Debug\CalculatorGUI.pdb
