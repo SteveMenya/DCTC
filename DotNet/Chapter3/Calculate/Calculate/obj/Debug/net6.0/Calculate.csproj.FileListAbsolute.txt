@@ -1,0 +1,15 @@
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\bin\Debug\net6.0\Calculate.exe
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\bin\Debug\net6.0\Calculate.deps.json
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\bin\Debug\net6.0\Calculate.runtimeconfig.json
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\bin\Debug\net6.0\Calculate.dll
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\bin\Debug\net6.0\ref\Calculate.dll
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\bin\Debug\net6.0\Calculate.pdb
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\obj\Debug\net6.0\Calculate.csproj.AssemblyReference.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\obj\Debug\net6.0\Calculate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\obj\Debug\net6.0\Calculate.AssemblyInfoInputs.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\obj\Debug\net6.0\Calculate.AssemblyInfo.cs
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\obj\Debug\net6.0\Calculate.csproj.CoreCompileInputs.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\obj\Debug\net6.0\Calculate.dll
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\obj\Debug\net6.0\ref\Calculate.dll
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\obj\Debug\net6.0\Calculate.pdb
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter3\Calculate\Calculate\obj\Debug\net6.0\Calculate.genruntimeconfig.cache
