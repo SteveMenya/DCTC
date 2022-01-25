@@ -1,0 +1,11 @@
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\bin\Debug\ASimpleApp.exe.config
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\bin\Debug\ASimpleApp.exe
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\bin\Debug\ASimpleApp.pdb
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\obj\Debug\ASimpleApp.csproj.AssemblyReference.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\obj\Debug\ASimpleApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\obj\Debug\ASimpleApp.Form1.resources
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\obj\Debug\ASimpleApp.Properties.Resources.resources
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\obj\Debug\ASimpleApp.csproj.GenerateResource.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\obj\Debug\ASimpleApp.csproj.CoreCompileInputs.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\obj\Debug\ASimpleApp.exe
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\ASimpleApp\ASimpleApp\obj\Debug\ASimpleApp.pdb

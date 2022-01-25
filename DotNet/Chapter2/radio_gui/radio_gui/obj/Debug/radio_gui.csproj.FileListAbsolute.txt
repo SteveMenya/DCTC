@@ -1,0 +1,11 @@
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\bin\Debug\radio_gui.exe.config
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\bin\Debug\radio_gui.exe
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\bin\Debug\radio_gui.pdb
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\obj\Debug\radio_gui.csproj.AssemblyReference.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\obj\Debug\radio_gui.csproj.SuggestedBindingRedirects.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\obj\Debug\radio_gui.Properties.Resources.resources
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\obj\Debug\radio_gui.csproj.GenerateResource.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\obj\Debug\radio_gui.csproj.CoreCompileInputs.cache
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\obj\Debug\radio_gui.exe
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\obj\Debug\radio_gui.pdb
+C:\Users\steve\OneDrive\Desktop\DCTC\DotNet\Chapter2\radio_gui\radio_gui\obj\Debug\radio_gui.Form1.resources

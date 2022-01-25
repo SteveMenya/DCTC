@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "021dc804-5015-4889-8c12-c57e869e61ff": {
+      "ProjectGuid": "021dc804-5015-4889-8c12-c57e869e61ff",
+      "DisplayName": "radio_gui",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

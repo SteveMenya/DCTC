@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bff0f723-17dc-4e18-a2f0-a966129b0abc": {
+      "ProjectGuid": "bff0f723-17dc-4e18-a2f0-a966129b0abc",
+      "DisplayName": "ASimpleApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
