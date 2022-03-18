@@ -1,1 +1,8 @@
 .DS_Store
+.classpath
+.project
+.project
+.classpath
+.settings/
+/bin/
+Credits.class
