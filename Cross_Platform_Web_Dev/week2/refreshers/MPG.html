@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPG Page</title>
+    <script src="MPGApp.mjs" type="module" defer></script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #result {
+            display: none;
+            /** visibility invisible **/
+        }
+    </style>
+</head>
+<body>
+    <label for="">
+        Distance Traveled
+        <input type="number" name="" id="distanceInput">
+    </label>
+    <label for="">
+        Gas Used
+        <input type="number" name="" id="gasUsed">
+    </label>
+    <button id="calculateButton"> Calculate</button>
+    <section id="result">
+        <h1>Your mpg is <span id="mpgOut"></span></h1>
+    </section>
+</body>
+</html>
