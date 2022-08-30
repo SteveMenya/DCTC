@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        section {
+            background-color: grey;
+            font-size: 1.5em;
+            padding: 1.2em;
+            border-bottom: 1px solid black;
+        }
+
+        .my_important_class {
+            background-color: greenyellow !important;
+        }
+
+        @media screen and (min-width:800px) {
+            section {
+                width: 700px;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media screen and (min-width:1000px) {
+            section {
+                border: solid 1px #cacaca;
+                margin: 20px;
+                box-shadow: 10px 13px #00000033;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- cheat sheat section*5>h1+p>lorem -Builds 5 sections as so-->
+    <section>
+        <h1></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores error quasi, fugiat similique enim aut
+            modi
+            debitis possimus nobis omnis odit vero repellendus in eius culpa, eum, rerum atque iste?</p>
+    </section>
+    <section>
+        <h1></h1>
+        <p>Assumenda, quis libero eveniet dignissimos velit possimus ullam sed repellendus dicta accusantium impedit
+            alias perspiciatis doloribus, rerum tenetur beatae reiciendis iusto, porro eum distinctio. Accusantium
+            ullam
+            blanditiis labore eius culpa!</p>
+    </section>
+    <section>
+        <h1></h1>
+        <p>Ab recusandae placeat maxime ipsam velit quis eaque aperiam facere doloribus quo alias sint delectus
+            voluptate eos et ea neque ipsa, quaerat reprehenderit earum quod sit magnam esse aliquam. Laborum.</p>
+    </section>
+    <section>
+        <h1></h1>
+        <p>Nobis eaque non consequatur, repellendus enim velit? Suscipit dolor sapiente, quia autem delectus magni
+            cupiditate ea perspiciatis ex molestias doloribus id eaque deserunt hic eveniet, excepturi quod ipsam
+            adipisci ipsum!</p>
+    </section>
+    <section class="my_important_class">
+        <h1></h1>
+        <p>Qui adipisci molestias hic aliquam cupiditate sed dolorum odit quas itaque tempora ab placeat, deserunt,
+            illo
+            enim nulla veniam quo. Magni et voluptatem alias unde voluptas amet ab reiciendis. Repudiandae!</p>
+    </section>
+
+</body>
+
+</html>
