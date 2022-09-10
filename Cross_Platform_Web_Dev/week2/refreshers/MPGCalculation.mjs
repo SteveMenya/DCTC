@@ -1,3 +1,3 @@
-export function calculateMPG(distanceTraveled, gasUsed) {
-    return distanceTraveled / gasUsed;
-}
+// export function calculateMPG(distanceTraveled, gasUsed) {
+//     return distanceTraveled / gasUsed;
+// }
