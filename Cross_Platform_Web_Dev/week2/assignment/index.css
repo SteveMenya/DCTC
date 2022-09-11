@@ -1,0 +1,42 @@
+body {
+  background-color: gre;
+}
+
+#MathApp {
+  background-color: aliceblue;
+  height: 400px;
+  width: 400px;
+  border: 5px solid black;
+}
+
+#subtractionApp {
+  background-color: darkgray;
+  height: 200;
+  width: 200;
+  border: 1px solid black;
+}
+
+#temperatureConversionsApp {
+  background-color: darkgray;
+  height: 150;
+  width: 150;
+  border: 1px solid black;
+}
+
+button {
+  color: #050;
+  background-color: #fed;
+  border: 1px solid;
+  border-color: #696 #363 #363 #696;
+  padding: 8px 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: sans-serif;
+  width: 200px;
+  width: 200px;
+  border: 1px solid #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
