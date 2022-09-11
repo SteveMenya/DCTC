@@ -26,6 +26,10 @@
       #temperatureConversionsApp {
         display: none;
       }
+
+      #resultForCelciusConversion {
+        display: none;
+      }
     </style>
   </head>
 
@@ -80,14 +84,14 @@
       </div>
 
       <div id="temperatureConversionsApp">
-        <label for="unitsconsole.group('label');">Choose a unit:</label>
-
-        <select name="units" id="units">
-          <option value="">Select One</option>
-          <option value="celcius">celcius</option>
-          <option value="fahrenheit">fahrenheit</option>
-          <option value="kelvin">kelvin</option>
-        </select>
+        <label for="units">
+          Choose a unit
+          <select id="units">
+            <option>celcius</option>
+            <option>fahrenheit</option>
+            <option>kelvin</option>
+          </select>
+        </label>
 
         <label for="temp">
           temp
@@ -95,16 +99,17 @@
         </label>
 
         <button id="convertTemperatureButton">Convert</button>
-        <!-- <label for="unit">
-          unit(celcius, f, k)
-          <input type="text" id="unit" />
-        </label>
-        <label for="temp">
-          temp
-          <input type="number" id="temp" />
-        </label>
 
-        <button id="convertTemperatureButton">Convert</button> -->
+        <section id="resultForCelciusConversion">
+          <h1>
+            <span id="selectedUnitOut"></span> to <span id="unitOneOut"></span>:
+            <span id="conversionOneOut"></span>
+          </h1>
+          <h1>
+            <span id="selectedUnitOutTwo"></span> to <span id="unitTwoOut"></span>:
+            <span id="conversionTwoOut"></span>
+          </h1>
+        </section>
       </div>
     </div>
   </body>

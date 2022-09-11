@@ -31,9 +31,7 @@ addButton.addEventListener("click", () => {
 
   calculateButton.addEventListener("click", () => {
     let theInput = parseInt(number1Input.value);
-    console.log(theInput);
     let theSecondInput = parseInt(number2Input.value);
-    console.log(theSecondInput);
     const total = calculateSum(theInput, theSecondInput);
     calculationOut.textContent = total;
     result.style.display = "block";
@@ -56,9 +54,7 @@ subtractionButton.addEventListener("click", () => {
 
   calculateButton.addEventListener("click", () => {
     let theInput = parseInt(number1Input.value);
-    console.log(theInput);
     let theSecondInput = parseInt(number2Input.value);
-    console.log(theSecondInput);
     const total = calculateDifference(theInput, theSecondInput);
     calculationOut.textContent = total;
     result.style.display = "block";
@@ -73,17 +69,55 @@ tccButton.addEventListener("click", () => {
   subtractionButton.style.display = "none";
   tccButton.style.display = "none";
 
-  const unitInput = document.getElementById("units").options[1].value;
   const tempInput = tempConversionController.querySelector("#temp");
-  const convertTemperature = tempConversionController.querySelector(
-    "#convertTemperatureButton"
+  const conversionOneOut =
+    tempConversionController.querySelector("#conversionOneOut");
+  const conversionTwoOut =
+    tempConversionController.querySelector("#conversionTwoOut");
+  const result = tempConversionController.querySelector(
+    "#resultForCelciusConversion"
+  );
+  const unitOneOut = tempConversionController.querySelector("#unitOneOut");
+  const unitTwoOut = tempConversionController.querySelector("#unitTwoOut");
+  const selectedUnitout =
+    tempConversionController.querySelector("#selectedUnitOut");
+
+  const selectedUnitoutTwo = tempConversionController.querySelector(
+    "#selectedUnitOutTwo"
   );
 
   convertTemperatureButton.addEventListener("click", () => {
-    let theUnitInput = unitInput;
-    let theTemperatureInput = parseInt(tempInput.value);
-  });
+    var x = document.getElementById("units").selectedIndex;
+    var y = document.getElementById("units").options;
+    var selectedValue = y[x].text;
 
-  // conversionClass = new Temperature()
-  // celcius
+    let theUnitInput = selectedValue;
+    let theTemperatureInput = parseInt(tempInput.value);
+
+    let response = convertTemperatureFunc(theUnitInput, theTemperatureInput);
+
+    let conversionTwoItem;
+    let conversionOneItem;
+    if (selectedValue == "celcius") {
+      conversionOneItem = response.fahrenheit;
+      conversionTwoItem = response.kelvin;
+    } else if (selectedValue == "fahrenheit") {
+      conversionOneItem = response.celcius;
+      conversionTwoItem = response.kelvin;
+    } else if (selectedValue == "kelvin") {
+      conversionOneItem = response.fahrenheit;
+      conversionTwoItem = response.celcius;
+    }
+    let myKeys = Object.keys(response);
+    let key1 = myKeys[0];
+    let key2 = myKeys[1];
+    conversionOneOut.textContent = conversionOneItem;
+    conversionTwoOut.textContent = conversionTwoItem;
+    unitOneOut.textContent = key1;
+    unitTwoOut.textContent = key2;
+    selectedUnitout.textContent = selectedValue;
+    selectedUnitoutTwo.textContent = selectedValue;
+
+    result.style.display = "block";
+  });
 });

@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MPG Page</title>
     <script src="MPGApp.mjs" type="module" defer></script>
     <style>
-        body {
-            font-family: sans-serif;
-        }
-        #result {
-            display: none;
-            /** visibility invisible **/
-        }
-    </style>
-</head>
-<body>
-   <div id="mpgApp">
-    <label for="distanceInput">
-        <input type="number" id="distanceInput">
-    </label>
-    <label for="gasUsed">
-        Gas Used
-        <input type="number" id="gasUsed">
-    </label>
-    <button id="calculateButton">Calculate</button>
-    <section id="result">
-        <h1>Your mpg is <span id="mpgOut"></span></h1>
-    </section>
+      body {
+        font-family: sans-serif;
+      }
 
-   </div>
-</body>
+      #result {
+        display: none;
+        /** visibility invisible **/
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="mpgApp">
+      <label for="distanceInput">
+        Distance Travelled
+        <input type="number" id="distanceInput" />
+      </label>
+      <label for="gasUsed">
+        Gas Used
+        <input type="number" id="gasUsed" />
+      </label>
+      <button id="calculateButton">Calculate</button>
+      <section id="result">
+        <h1>Your mpg is <span id="mpgOut"></span></h1>
+      </section>
+    </div>
+  </body>
 </html>
