@@ -4,29 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>main document</title>
-    <script type="module" src="TemperatureConv.mjs" defer></script>
+    <title>Calculation App</title>
+    <script type="module" src="TemperatureConvApp.mjs" defer></script>
     <style>
-      body{
+      body {
         font-family: sans-serif;
+      }
+
+      #result {
+        display: none;
+      }
+
+      #additionApp {
+        display: none;
+      }
+
+      #subtractionApp {
+        display: none;
+      }
+
+      #temperatureConversionsApp {
+        display: none;
       }
     </style>
   </head>
-  <body>
-    <div id="myCalculationApp">
-      <label for="addition">
-        Add
-        <input type="number" id="addition" />
-      </label>
-      <label for="plusSign">
-        +
-      <input type="number" id="plusSign">
-      </label>
-      <button id="calculateButton">Calculate</button>
 
-      <section id="results">
-        <h1>Your total is <span id="calculationOut"></span></h1>
-      </section>
+  <body>
+    <div id="MathApp">
+      <label for="addition">
+        <button id="addition">Addition</button>
+      </label>
+
+      <label for="subtraction">
+        <button id="subtraction">Subtraction</button>
+      </label>
+
+      <label for="temperatureConversions">
+        <button id="temperatureConversions">Temperature Conversion</button>
+      </label>
+
+      <div id="additionApp">
+        <label for="inputOne">
+          Add
+          <input type="number" id="inputOne" />
+        </label>
+
+        <label for="inputTwo">
+          +
+          <input type="number" id="inputTwo" />
+        </label>
+
+        <button id="calculateButton">Calculate</button>
+
+        <section id="result">
+          <h1>Your total is <span id="calculationOut"></span></h1>
+        </section>
+      </div>
+
+      <div id="subtractionApp">
+        <label for="subTractOne">
+          Subtract
+          <input type="number" id="subTractOne" />
+        </label>
+
+        <label for="subTractTwo">
+          -
+          <input type="number" id="subTractTwo" />
+        </label>
+
+        <button id="calculateButton">Calculate</button>
+
+        <section id="result">
+          <h1>Your Difference is <span id="calculationOut"></span></h1>
+        </section>
+      </div>
+
+      <div id="temperatureConversionsApp">
+        <label for="unitsconsole.group('label');">Choose a unit:</label>
+
+        <select name="units" id="units">
+          <option value="">Select One</option>
+          <option value="celcius">celcius</option>
+          <option value="fahrenheit">fahrenheit</option>
+          <option value="kelvin">kelvin</option>
+        </select>
+
+        <label for="temp">
+          temp
+          <input type="number" id="temp" />
+        </label>
+
+        <button id="convertTemperatureButton">Convert</button>
+        <!-- <label for="unit">
+          unit(celcius, f, k)
+          <input type="text" id="unit" />
+        </label>
+        <label for="temp">
+          temp
+          <input type="number" id="temp" />
+        </label>
+
+        <button id="convertTemperatureButton">Convert</button> -->
+      </div>
     </div>
   </body>
 </html>
