@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let myPromiseObject = Promise.resolve("Hello Promises");
+      myPromiseObject.then((resolvedData) => {
+        console.log("The promise resolved!", resolvedData);
+      });
+
+      let myOtherPromiseObject = new Promise((resolve, reject) => {
+        resolve("Promise constructor resolve called");
+      });
+      myOtherPromiseObject.then((resolvedData) => {
+        console.log("The other promise resolved!", resolvedData);
+      });
+
+      let myDelayedPromisedObject = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("Done with Timeout ", 5000));
+      });
+
+      myDelayedPromisedObject.then((resolvedData) => {
+        console.log("Done with delayed promise!", resolvedData);
+      });
+      console.log(myOtherPromiseObject);
+
+      let myFetchPromiseObject = fetch("https://http.bin.org.org/get");
+
+    //   myFetchPromiseObject.then((response) => {
+    //     console.log(response);
+    //     // response.text().then((theText) => {
+    //     //   console.log(theText);
+    //     // });
+    //     return response.text;
+    //   });
+
+    myFetchPromiseObject.then(response)
+    </script>
+  </head>
+  <body></body>
+</html>

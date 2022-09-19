@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      async function helloAsync() {
+        return "Hi Async Stuff";
+      }
+
+      helloAsync().then((data) => console.log(data));
+
+      async function helloAwait() {
+        const data = await helloAsync();
+        console.log("Hello await! data=", data);
+      }
+
+      helloAwait();
+
+      async function helloWait() {
+        async function helloHTTPRequest() {
+          const response = await fetch("https://httpbin.org/get");
+          const text = await response.text();
+          console.log("Hello http request! ", text);
+        }
+      }
+
+      helloWait();
+    </script>
+  </head>
+  <body>
+    <h1>Async Functions</h1>
+  </body>
+</html>
