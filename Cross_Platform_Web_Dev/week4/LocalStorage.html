@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="" />
+    <button>Save</button>
+    <ul></ul>
+
+    <script>
+      const input = document.querySelector("input");
+      const button = document.querySelector("button");
+      const ul = document.querySelector("ul");
+      const stuff = loadFromLocalStorage();
+      stuff.forEach(processUserInput);
+
+      function saveToLocalStorage(things) {
+        const thingsAsString = JSON.stringify(things);
+        localStorage.setItem("myList", thingsAsString);
+      }
+
+      function loadFromLocalStorage() {
+        const thingsAsString = localStorage.getItem("mylist");
+        const things = JSON.parse(thingsAsString) || [];
+        return things;
+        /* Equivalent 
+        const temp = JSON.parse(thingsAsString);
+        const thigs = (temp)? temp: [];
+
+        -----------------
+
+        let things = JSON.parse(thigsAsString);
+        if(!things)
+        */
+      }
+
+      //   stuff.loadFromLocalStorage()
+
+      function processUserInput(userInput) {
+        const li = document.createElement("li");
+        li.textContent = userInput;
+        ul.appendChild(li);
+        stuff.push(userInput);
+        // saveToLocalStorage(stuff);
+      }
+
+      button.addEventListener("click", (event) => {
+        processUserInput(input.value);
+        input.value = "";
+        input.focus();
+      });
+
+      input.addEventListener("keyup", (event) => {
+        if (event.key != "Enter") {
+          return;
+        }
+        processUserInput(input.value);
+        input.value = "";
+        input.focus();
+        saveToLocalStorage(stuff);
+        input.value = "";
+      });
+    </script>
+  </body>
+</html>

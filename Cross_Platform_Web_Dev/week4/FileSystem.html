@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Write to file</h1>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button id="save">save</button>
+    <script>
+      const texarea = document.querySelector("textarea");
+      const saveButton = document.querySelector("#save");
+
+      saveButton.addEventListener("click", async () => {
+        const usetText = texarea.value;
+        const saveFileHandler = await window.showSaveFilePicker();
+        const writer = await saveFileHandler.createWritable();
+        write.write("Anything!");
+        write.write(userText);
+        writer.close();
+      });
+    </script>
+
+    <h1>Read from file</h1>
+    <button id="read">read</button>
+    <pre id="pre"></pre>
+
+    <script>
+      const readButton = document.querySelector("#read");
+      const out = document.querySelector("pre");
+      readButton.addEventListener("click", async () => {
+        const [openFileHandler] = await window.showOpenFilePicker();
+        const file = await openFileHandler.getFile();
+        const text = await file.text();
+        out.textContent = text;
+      });
+    </script>
+  </body>
+</html>
