@@ -1,0 +1,33 @@
+.root-header {
+    background-color: grey;
+    color: white;
+}
+
+.root-header h1 {
+    padding: 20px;
+    margin: 0;
+    
+
+}
+
+.root-header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.root-header a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    padding: 20px;
+    text-align: left;
+}
+
+.root-header li:hover,
+.root-header li:active {
+  background-color: darkslategray;
+  border-color: darkslategray;
+}
