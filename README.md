@@ -10,8 +10,10 @@ Fall Class - Cross Platform Web Development
 
 First school react
 
-Getting started
+Getting started on Mac
 
 ```
-    npx create-react-app my-app - my-app is the name of your application
+    npx create-react-app my-app
+    cd my-app
+    npm start
 ```
