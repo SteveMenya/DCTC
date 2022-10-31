@@ -1,0 +1,7 @@
+{
+  "name": "Photography",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
