@@ -17,3 +17,8 @@ Getting started on Mac
     cd my-app
     npm start
 ```
+
+## Ionic
+```
+    npm install -g @ionic/cli
+```
