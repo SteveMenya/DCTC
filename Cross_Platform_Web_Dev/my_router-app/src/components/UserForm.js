@@ -36,7 +36,7 @@ const UserForm = (props) => {
     <form onSubmit={submitHandler}>
       <div className="new-user__infos">
         <div className="new-user__info">
-          {/* <label>First Name</label> */}
+          <label>First Name</label>
           <input
             value={enteredFirstName}
             onChange={firstNameChangedHandler}
@@ -45,7 +45,7 @@ const UserForm = (props) => {
           ></input>
         </div>
         <div className="new-user__info">
-          {/* <label>Last Name</label> */}
+          <label>Last Name</label>
           <input
             value={enteredLastName}
             onChange={lastNameChangedHandler}
@@ -54,7 +54,7 @@ const UserForm = (props) => {
           ></input>
         </div>
         <div className="new-user__info">
-          {/* <label>Email</label> */}
+          <label>Email</label>
           <input
             value={enteredEmail}
             onChange={emailChangedHandler}
