@@ -1,0 +1,10 @@
+{
+    "apple": {
+        "name":"apple",
+        "color":"red"
+    },
+    "orange": {
+        "name":"orange",
+        "color":"orange"
+    }
+}

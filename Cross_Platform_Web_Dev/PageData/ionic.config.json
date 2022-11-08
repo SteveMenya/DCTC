@@ -1,0 +1,7 @@
+{
+  "name": "PageData",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
