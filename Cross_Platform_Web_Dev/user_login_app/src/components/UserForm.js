@@ -1,0 +1,78 @@
+import { useState } from "react";
+import APIService from "./APIService";
+import "./UserForm.css";
+
+const UserForm = (props) => {
+  const [enteredFirstName, setFirstName] = useState("");
+  const [enteredLastName, setLastName] = useState("");
+  const [enteredEmail, setEmail] = useState("");
+
+  const firstNameChangedHandler = (event) => {
+    setFirstName(event.target.value);
+  };
+
+  const lastNameChangedHandler = (event) => {
+    setLastName(event.target.value);
+  };
+
+  const emailChangedHandler = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const insertUserData = () => {};
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    const userData = {
+      f_name: enteredFirstName,
+      l_name: enteredLastName,
+      email: enteredEmail,
+    };
+
+    APIService(userData);
+
+    props.onAddUser(userData);
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+  };
+
+  return (
+    <form onSubmit={submitHandler}>
+      <div className="new-user__infos">
+        <div className="new-user__info">
+          <label>First Name</label>
+          <input
+            value={enteredFirstName}
+            onChange={firstNameChangedHandler}
+            type="text"
+            placeholder="First Name"
+          ></input>
+        </div>
+        <div className="new-user__info">
+          <label>Last Name</label>
+          <input
+            value={enteredLastName}
+            onChange={lastNameChangedHandler}
+            type="text"
+            placeholder="Last Name"
+          ></input>
+        </div>
+        <div className="new-user__info">
+          <label>Email</label>
+          <input
+            value={enteredEmail}
+            onChange={emailChangedHandler}
+            type="email"
+            placeholder="email"
+          ></input>
+        </div>
+        <div className="new-user__add">
+          <button type="submit">Add User</button>
+        </div>
+      </div>
+    </form>
+  );
+};
+
+export default UserForm;

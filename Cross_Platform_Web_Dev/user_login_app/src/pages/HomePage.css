@@ -1,0 +1,17 @@
+.homepage{
+    background-color: aliceblue;
+}
+
+.homepage h1 {
+    text-align: left;
+    text-transform: uppercase;
+    color: lightslategrey;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.homepage ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 2px;  
+}
