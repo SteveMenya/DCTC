@@ -20,6 +20,7 @@ const LoginForm = () => {
       email: enteredEmail,
       password: enteredPassword,
     };
+
     APIService(userInput)
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
@@ -30,27 +31,27 @@ const LoginForm = () => {
     <form onSubmit={submitHandler}>
       <div className="user-login__infos">
         <div className="user-login__info">
-          <label>Email</label>
+          <label> Email </label>{" "}
           <input
             value={enteredEmail}
             onChange={emailChangeHandler}
             type="email"
             placeholder="email"
-          ></input>
-        </div>
+          ></input>{" "}
+        </div>{" "}
         <div className="user-login__info">
-          <label>Password</label>
+          <label> Password </label>{" "}
           <input
             value={enteredPassword}
             onChange={passwordChangeHandler}
             type="password"
             placeholder="Password"
-          ></input>
-        </div>
+          ></input>{" "}
+        </div>{" "}
         <div className="user_login">
-          <button type="submit">Login</button>
-        </div>
-      </div>
+          <button type="submit"> Login </button>{" "}
+        </div>{" "}
+      </div>{" "}
     </form>
   );
 };

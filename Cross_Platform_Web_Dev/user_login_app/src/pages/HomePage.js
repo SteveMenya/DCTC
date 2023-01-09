@@ -9,11 +9,17 @@ export default function HomePage() {
         <li>Components</li>
         <li>Use state concept</li>
       </ul>
+      <h1>Technologies used</h1>
+      <ul>
+        <li>React</li>
+        <li>Python Flask</li>
+        <li>My sql server</li>
+      </ul>
 
       <h1>Disclaimer!!!</h1>
       <p>
         Website is still under construction. It can currently get user input and
-        console log them
+        save user submissions to database
       </p>
     </div>
   );
