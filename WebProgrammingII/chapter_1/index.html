@@ -1,0 +1,132 @@
+\<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kyoto Kaiseki Restaurant Review</title>
+    <style>
+      h1 {
+        background-color: lightgreen;
+        color: rgb(40, 40, 40);
+      }
+      p {
+        font-family: arial;
+        margin-left: 10px;
+      }
+      img {
+        margin-left: 10px;
+      }
+      strong {
+        color: rgb(100, 100, 100);
+      }
+      em {
+        color: darkblue;
+      }
+      span {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kyoto Kaiseki Restaurant Review</h1>
+    <p>
+      <strong>Rating:</strong>
+      <span id="rating1">*</span>
+      <span id="rating2">*</span>
+      <span id="rating3">*</span>
+      <span id="rating4">*</span>
+      <span id="rating5">*</span>
+    </p>
+
+    <p>
+      <strong>Update rating:</strong>
+      <button id="rate1Btn">Rate 1</button>
+      <button id="rate2Btn">Rate 2</button>
+      <button id="rate3Btn">Rate 3</button>
+      <button id="rate4Btn">Rate 4</button>
+      <button id="rate5Btn">Rate 5</button>
+    </p>
+
+    <p><strong>Favorite dish:</strong> Mixed sashimi</p>
+
+    <img src="https://resources.zybooks.com/WebProgramming/kyotov1.jpg" />
+
+    <p>
+      <strong>Review:</strong> The kaiseki meal was amazing and featured 10
+      courses. Every course was beautifully and artistically prepared using
+      different seasonal ingredients. The service was some of the best service
+      we've ever had. The restaurant's staff was <em>amazing</em>. The
+      restaurant was booked for the evening, but they managed to squeeze us in.
+      And, we ended up in a private dining room.
+
+
+
+
+      <ol>
+        <li>Apples 
+           <ol>
+              <li>Red</li>
+              <li>Green</li> 
+           </ol>
+        </li>
+        <li>Oranges</li> 
+        <li>Bananas</li>
+     </ol>
+    </p>
+    <script>
+      let rate1Btn = document.getElementById("rate1Btn");
+      rate1Btn.addEventListener("click", function () {
+        updateRating(1);
+      });
+
+      let rate2Btn = document.getElementById("rate2Btn");
+      rate2Btn.addEventListener("click", function () {
+        updateRating(2);
+      });
+
+      let rate5Button = document.getElementById("rate5Btn");
+      rate5Button.addEventListener("click", function () {
+        updateRating(5);
+      });
+
+      let rate4Button = document.getElementById("rate4Btn");
+      rate4Button.addEventListener("click", function () {
+        updateRating(4);
+      });
+
+      let rate3Button = document.getElementById("rate3Btn");
+      rate3Button.addEventListener("click", function () {
+        updateRating(3);
+      });
+
+      function updateRating(newRating) {
+        let star1 = document.getElementById("rating1");
+        let star2 = document.getElementById("rating2");
+        let star3 = document.getElementById("rating3");
+        let star4 = document.getElementById("rating4");
+        let star5 = document.getElementById("rating5");
+
+        star1.style.color = "blue";
+        star2.style.color = "blue";
+        star3.style.color = "blue";
+        star4.style.color = "blue";
+        star5.style.color = "blue";
+
+        if (newRating == 4) {
+          star5.style.color = "lightgray";
+        } else if (newRating == 3) {
+          star5.style.color = "lightgray";
+          star4.style.color = "lightgray";
+        } else if (newRating == 2) {
+          star5.style.color = "lightgray";
+          star4.style.color = "lightgray";
+          star3.style.color = "lightgray";
+        } else if (newRating == 1) {
+          star5.style.color = "lightgray";
+          star4.style.color = "lightgray";
+          star3.style.color = "lightgray";
+          star2.style.color = "lightgray";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+#outer-container {
+  width: 600px;
+  height: 280px;
+  border: 2px solid blue;
+  padding: 5px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.yellow-container {
+  background-color: yellow;
+  float: left;
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  /* margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0; */
+}
+
+.orange-container {
+  background-color: orange;
+  position: absolute;
+  top: 200px;
+  left: 110px;
+  width: 200px;
+  padding: 10px;
+}
+
+.orange-red-container {
+  background-color: rgb(255, 80, 0);
+  color: white;
+  float: right;
+  width: 200px;
+  padding: 10px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 0;
+}

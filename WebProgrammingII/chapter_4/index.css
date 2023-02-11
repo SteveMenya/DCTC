@@ -1,0 +1,7 @@
+.img[alt~="six"] {
+    opacity: 0.3;
+}
+
+*.img[alt~="six"]{
+    opacity: 0.3;
+}

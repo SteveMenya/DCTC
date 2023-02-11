@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>social network</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Join a social network</h1>
+    </header>
+
+    <main>
+      <form
+        action="https://wp.zybooks.com/form-viewer.php"
+        enctype="multipart/form-data"
+        method="POST"
+      >
+        <div>
+          <label for="fullName">Full name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+
+        <div>
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="about">About you:</label>
+          <textarea name="about" id="about" cols="50" rows="3"></textarea>
+        </div>
+
+        <div>
+          <label for="picture">Photo:</label>
+          <input type="file" value="Choose File" name="picture" id="picture" />
+        </div>
+
+        <div>
+          <input type="submit" name="submit" id="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
