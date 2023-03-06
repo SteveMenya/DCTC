@@ -1,0 +1,29 @@
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+nav li {
+    flex-grow: 1;
+    background-color: gold;
+    text-align: center;
+}
+
+nav li {
+    flex-basis: 100px;
+    flex-shrink: 0;
+    background-color: gold;
+    text-align: center;
+}
+
+.container {
+    border: 2px solid lightblue;
+    display: flex;
+    height: 120px;
+    width: 120px;
+ 
+    /* Your solution goes here */
+    flex-direction:  ;
+ }
